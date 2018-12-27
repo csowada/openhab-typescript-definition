@@ -45,8 +45,12 @@ declare const StringType: XType;            // org.eclipse.smarthome.core.librar
 declare const StringListType: XType;        // org.eclipse.smarthome.core.library.types.StringListType
 declare const RawType: XType;               // org.eclipse.smarthome.core.library.types.RawType
 
+declare const SIUnits: XType;               // org.eclipse.smarthome.core.library.unit.SIUnits
+declare const ImperialUnits: XType;         // org.eclipse.smarthome.core.library.unit.ImperialUnits
+declare const MetricPrefix: XType;          // org.eclipse.smarthome.core.library.unit.MetricPrefix
+declare const SmartHomeUnits: XType;        // org.eclipse.smarthome.core.library.unit.SmartHomeUnits
 
-declare const items: ItemRegistry;
+declare const items: any;                   // ItemRegistryDelegate implements Map<String, State>
 declare const itemRegistry: ItemRegistry;
 declare const ir: ItemRegistry;
 declare const things: any;              // ThingRegistry;

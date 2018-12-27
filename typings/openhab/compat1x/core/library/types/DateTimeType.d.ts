@@ -12,7 +12,7 @@ declare class DateTimeType implements PrimitiveType, State, Command {
 
     getCalendar():Calendar;
 
-    static  valueOf(value:string):DateTimeType
+    static valueOf(value:string):DateTimeType
 
     format(locale:Locale, pattern:string):String
 
