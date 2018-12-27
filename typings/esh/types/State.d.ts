@@ -4,7 +4,7 @@
  * @author Kai Kreuzer - Initial contribution and API
  *
  */
-interface State extends Type{
+interface State extends Type {
     
     /**
      * Convert this {@link State}'s value into another type

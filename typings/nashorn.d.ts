@@ -14,18 +14,6 @@ declare var __LINE__:number;
 
 declare var __filename: string;
 
-// interface NodeModule {
-//     exports: any;
-    // require: NodeRequireFunction;
-    // id: string;
-    // filename: string;
-    // loaded: boolean;
-    // parent: NodeModule | null;
-    // children: NodeModule[];
-// }
-
-// declare var module: NodeModule;
-
 declare class Java {
     static extend(type: any): any
     static extend(type: any, impl: any): any

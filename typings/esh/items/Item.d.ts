@@ -30,14 +30,14 @@ interface Item {
      *
      * @return the name of the item
      */
-    getName():String;
+    getName():string;
 
     /**
      * returns the item type as defined by {@link ItemFactory}s
      *
      * @return the item type
      */
-     getType():String;
+     getType():string;
 
     /**
      * <p>

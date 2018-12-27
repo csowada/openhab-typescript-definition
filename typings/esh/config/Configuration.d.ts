@@ -29,8 +29,8 @@ declare class Configuration {
 
     values():any[];
 
-    getProperties():any; //Map<String, Object>
+    getProperties(): {[index: string]: any}; //Map<String, Object>
 
-    setProperties(properties:any):void; //Map<String, Object> properties
+    setProperties(properties:{[index: string]: any}):void; //Map<String, Object> properties
 
 }

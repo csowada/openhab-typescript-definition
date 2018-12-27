@@ -18,20 +18,20 @@ interface Event {
      * 
      * @return the event topic
      */
-    getTopic(): String;
+    getTopic(): string;
 
     /**
      * Gets the payload as a serialized string.
      * 
      * @return the serialized event
      */
-    getPayload(): String;
+    getPayload(): string;
 
     /**
      * Gets the name of the source identifying the sender.
      * 
      * @return the name of the source
      */
-    getSource(): String;
+    getSource(): string;
 
 }
