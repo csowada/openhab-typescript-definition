@@ -1,5 +1,5 @@
-declare const SimpleActionHandler: SimpleActionHandler;
-declare const SimpleConditionHandler: SimpleConditionHandler;
+// declare const SimpleActionHandler: SimpleActionHandler;
+// declare const SimpleConditionHandler: SimpleConditionHandler;
 declare const SimpleTriggerHandler: SimpleTriggerHandler;
 // declare const TriggerType: any;
 // declare const ConfigDescriptionParameter: any;

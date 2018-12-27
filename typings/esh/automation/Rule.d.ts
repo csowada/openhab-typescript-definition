@@ -1,3 +1,22 @@
+/**
+ * An automation Rule is built from {@link Module}s and consists of three parts:
+ * <ul>
+ * <li><b>Triggers:</b> a list of {@link Trigger} modules. Each {@link Trigger} from this list
+ * can start the evaluation of the Rule. A Rule with an empty list of {@link Trigger}s can
+ * only be triggered through the {@link RuleRegistry#runNow(String, boolean, java.util.Map)} method,
+ * or directly executed with the {@link RuleRegistry#runNow(String)} method.
+ * <li><b>Conditions:</b> a list of {@link Condition} modules. When a Rule is triggered, the
+ * evaluation of the Rule {@link Condition}s will determine if the Rule will be executed.
+ * A Rule will be executed only when all it's {@link Condition}s are satisfied. If the {@link Condition}s
+ * list is empty, the Rule is considered satisfied.
+ * <li><b>Actions:</b> a list of {@link Action} modules. These modules determine the actions that
+ * will be performed when a Rule is executed.
+ * </ul>
+ * Additionally, Rules can have <code><b>tags</b></code> - non-hierarchical keywords or terms for describing them.
+ * They can help the user to classify or label the Rules, and to filter and search them.
+ *
+ * @author Kai Kreuzer - Initial Contribution
+ */
 interface Rule extends Identifiable<string> {
 
     /**

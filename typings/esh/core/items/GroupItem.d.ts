@@ -1,4 +1,4 @@
-interface GroupItem extends GenericItem {
+declare class GroupItem extends GenericItem {
 
     /**
      * Returns the direct members of this {@link GroupItem} regardless if these

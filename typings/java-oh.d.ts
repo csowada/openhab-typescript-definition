@@ -4,3 +4,11 @@ declare interface Comparable<T> {
 
 declare class Locale {}
 declare class Calendar {}
+
+declare type TriggerValues = {
+    command: Command,
+    oldState: State,
+    newState: State,
+    event: Event,
+    state: State
+};

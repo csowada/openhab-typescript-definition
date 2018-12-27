@@ -1,4 +1,4 @@
-interface ConfigDescriptionParameter {
+declare class ConfigDescriptionParameter {
 	getContext(  ):string;
 	getDefault(  ):string;
 	getDescription(  ):string;

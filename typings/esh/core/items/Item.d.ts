@@ -9,7 +9,7 @@
  * @author Kai Kreuzer - Initial contribution and API
  *
  */
-interface Item {
+interface Item extends Identifiable<string> {
     /**
      * returns the current state of the item
      *
