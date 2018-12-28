@@ -6,7 +6,7 @@ declare const StringUtils: any;             //org.apache.commons.lang.StringUtil
 declare const URLEncoder: any;              //java.net.URLEncoder
 declare const FileUtils: any;               //org.apache.commons.io.FileUtils
 declare const FilenameUtils: any;           //org.apache.commons.io.FilenameUtils
-declare const File: any;                    //java.io.File
+declare const File: java.io.File;           //java.io.File
 
 declare const OnOffType: XType;
 declare const ON: XType;

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "types": "./typings/index.d.ts",
+  "xxxtypes": "/typings/index.d.ts",
+  "xxtypes": "index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

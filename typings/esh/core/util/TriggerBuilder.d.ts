@@ -1,16 +1,14 @@
+/**
+ * This class allows the easy construction of a {@link Trigger} instance using the builder pattern.
+ *
+ * @author Markus Rathgeb - Initial contribution and API
+ */
 declare class TriggerBuilder extends ModuleBuilder<TriggerBuilder, Trigger> {
 
     public static create(): TriggerBuilder
 
+    public static  create(trigger:Trigger):TriggerBuilder
+
     public build(): Trigger
 
-    public withConfiguration<B>( arg0:Configuration ):TriggerBuilder;
-    
-    public withDescription<B>( arg0:string ):TriggerBuilder;
-    
-    public withId<B>( arg0:string ):TriggerBuilder;
-    
-    public withLabel<B>( arg0:string ):TriggerBuilder;
-    
-    public withTypeUID<B>( arg0:string ):TriggerBuilder;
 }
