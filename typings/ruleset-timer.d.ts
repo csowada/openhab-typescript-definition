@@ -1,0 +1,1 @@
+declare const timer: java.util.Timer

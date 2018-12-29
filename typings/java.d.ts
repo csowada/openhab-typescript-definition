@@ -17,6 +17,17 @@ declare namespace java {
     export var ClassLoader: ClassLoader;
   }
 
+  export namespace util {
+    export interface Timer {
+      schedule(task: TimerTask, delay: number): void;
+      scheduleAtFixedRate(task: TimerTask, delay: number, period: number): void
+    }
+    export abstract class TimerTask {
+      cancel(): boolean;
+      scheduledExecutionTime(): number;
+    }
+  }
+
   export namespace io {
     export interface Reader {
       readLine(): string;
