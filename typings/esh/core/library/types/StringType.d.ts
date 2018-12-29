@@ -1,23 +1,14 @@
 /**
- * The decimal type uses a BigDecimal internally and thus can be used for
- * integers, longs and floating point numbers alike.
  *
- * @author Kai Kreuzer - Initial contribution and API
- *
+ * @author Kai Kreuzer - Initial contribution
  */
-declare class DecimalType extends Number implements PrimitiveType, State, Command, java.lang.Comparable<DecimalType> {
+declare class StringType implements PrimitiveType, State, Command {
 
     constructor();
 
-    constructor(value: number);
-
     constructor(value: string);
-    
-    public static  valueOf(value: string): DecimalType
 
-    public toBigDecimal(): number;  //
-
-    public compareTo(o:DecimalType): number;
+    public static valueOf(value: string): StringType
 
     /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).
@@ -25,7 +16,7 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      * @param pattern the pattern to use
      * @return the formatted string
      */
-    public format(pattern:string): string;
+    public format(pattern:string):string;
 
     /**
      * Get a string representation that contains the whole internal representation of the type.
@@ -36,7 +27,7 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      *
      * @return a full string representation of the type to be consumed by 'valueOf(String)'
      */
-    public toFullString(): string;
+    public toFullString():string;
 
     /**
      * Convert this {@link State}'s value into another type
@@ -45,5 +36,7 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      * @return the {@link State}'s value in the given type's representation, or <code>null</code> if the conversion was
      *         not possible
      */
-    public as(target:State): State
+    public as(target:State):State
+
+    public format(pattern: string): string;
 }

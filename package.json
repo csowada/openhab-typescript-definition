@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "TypeScript definitons for openHAB",
   "author": "Christian Sowada, github@cs-dev.de",
+  "main": "./src/index.js",
   "license": "EPL",
-  "types": "index"
+  "types": "index",
+
+  "scripts": {
+    "build:index": "node ."
+  }
 }

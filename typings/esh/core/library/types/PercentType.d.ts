@@ -9,6 +9,6 @@ declare class PercentType extends DecimalType {
     public static ZERO: PercentType
     public static HUNDRED:PercentType
 
-    public static  valueOf(value: string): PercentType;
+    public static valueOf(value: string): PercentType;
 
 }

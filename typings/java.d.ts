@@ -12,6 +12,9 @@ declare namespace java {
 
       "class": java.lang.Class;
     }
+    export interface Comparable<T> {
+      compareTo(o:T): number;
+    }
     export var System: System;
     export var Class: Class;
     export var ClassLoader: ClassLoader;

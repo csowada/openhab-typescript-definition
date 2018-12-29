@@ -1,39 +1,35 @@
 /**
+ * This type can be used for items that are dealing with telephony functionality.
  *
- * @author Kai Kreuzer - Initial contribution
- * @author Erdoan Hadzhiyusein - Refactored to use ZonedDateTime
- * @author Jan N. Klug - add ability to use time or date only
+ * @author Thomas.Eichstaedt-Engelen / Initially CallType
+ * @author Gaël L'hopital - port to Eclipse SmartHome
+ *
  */
-declare class DateTimeType implements PrimitiveType, State, Command {
+declare class StringListType implements Command, State {
 
-    static DATE_PATTERN: string
-    static DATE_PATTERN_WITH_TZ: string
-    static DATE_PATTERN_WITH_TZ_AND_MS: string
-    static DATE_PATTERN_WITH_TZ_AND_MS_ISO: string
+    public static DELIMITER: string;
+    public static ESCAPED_DELIMITER: string;
+    public static REGEX_SPLITTER: string
 
     constructor();
 
+    constructor(rows: string[]);
+
+    constructor(...rows: StringType[]);
+
+    constructor(...rows: string[]);
+
     /**
-     * @deprecated The constructor uses Calendar object hence it doesn't store time zone. A new constructor is
-     *             available. Use {@link #DateTimeType(ZonedDateTime)} instead.
-     *
-     * @param calendar The Calendar object containing the time stamp.
+     * Deserialize the input string, splitting it on every delimiter not preceded by a backslash.
      */
-    constructor(calendar: Calendar);
+    constructor(serialized: string);
 
-    constructor(zoned: ZonedDateTime);
+    public getValue(index: number): string
 
-    constructor(zonedValue: string);
 
-    public getCalendar():Calendar;
+    public static valueOf(value: string): StringListType
 
-    static valueOf(value:string):DateTimeType
-
-    public format(locale:Locale, pattern:string):String
-
-    public compareTo(o:DecimalType): number;
-
-        /**
+    /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).
      *
      * @param pattern the pattern to use
@@ -60,4 +56,6 @@ declare class DateTimeType implements PrimitiveType, State, Command {
      *         not possible
      */
     public as(target:State): State
+
+    public format(pattern: string): string;
 }

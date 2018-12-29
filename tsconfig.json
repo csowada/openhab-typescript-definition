@@ -8,37 +8,13 @@
         "noImplicitThis": true,
         "strictNullChecks": true,
         "strictFunctionTypes": true,
-        // "baseUrl": "./typings",
-        // "typeRoots": [
-        //     "./"
+        // "types": [
+        //     "index"
         // ],
-        // "baseUrl": "./typings",
-        // "typeRoots": [
-        //     "."
-        // ],
-        "types": [
-            "index"
-        ],
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
-    // "include": [
-    //     "typings/*"
-    // ],
     "exclude": [
         "node_modules"
-    ],
-    // "files": [
-    //     "typings/index.d.ts",
-    //     "typings/java.d.ts",
-    //     "typings/nashorn.d.ts",
-    //     "typings/ruleset-default.d.ts",
-    //     "typings/ruleset-rulefactories.d.ts",
-    //     "typings/esh/automation/Action.d.ts",
-    //     "typings/esh/automation/Condition.d.ts",
-    //     "typings/esh/automation/Module.d.ts",
-    //     "typings/esh/automation/Rule.d.ts",
-    //     "typings/esh/core/common/registry/Identifiable.d.ts",
-    //     "typings/esh/rulesupport/shared/simple/SimpleRule.d.ts"
-    // ]
+    ]
 }

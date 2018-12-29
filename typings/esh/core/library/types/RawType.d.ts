@@ -1,23 +1,28 @@
 /**
- * The decimal type uses a BigDecimal internally and thus can be used for
- * integers, longs and floating point numbers alike.
+ * This type can be used for all binary data such as images, documents, sounds etc.
+ * Note that it is NOT adequate for any kind of streams, but only for fixed-size data.
  *
- * @author Kai Kreuzer - Initial contribution and API
+ * @author Kai Kreuzer
+ * @author Laurent Garnier - add MIME type
  *
  */
-declare class DecimalType extends Number implements PrimitiveType, State, Command, java.lang.Comparable<DecimalType> {
+declare class RawType implements PrimitiveType, State {
 
+    /**
+     * @Deprecated
+     */
     constructor();
-
-    constructor(value: number);
-
-    constructor(value: string);
     
-    public static  valueOf(value: string): DecimalType
+    /**
+     * @Deprecated
+     */
+    constructor(bytes: /*byte*/any[]);
 
-    public toBigDecimal(): number;  //
+    constructor(bytes: /*byte*/any[], mimeType: string);
 
-    public compareTo(o:DecimalType): number;
+    public getBytes(): /*byte*/any[]
+
+    public getMimeType(): string;
 
     /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).
@@ -25,7 +30,7 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      * @param pattern the pattern to use
      * @return the formatted string
      */
-    public format(pattern:string): string;
+    public format(pattern:string):string;
 
     /**
      * Get a string representation that contains the whole internal representation of the type.
@@ -36,7 +41,7 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      *
      * @return a full string representation of the type to be consumed by 'valueOf(String)'
      */
-    public toFullString(): string;
+    public toFullString():string;
 
     /**
      * Convert this {@link State}'s value into another type
@@ -45,5 +50,5 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
      * @return the {@link State}'s value in the given type's representation, or <code>null</code> if the conversion was
      *         not possible
      */
-    public as(target:State): State
+    public as(target:State):State
 }

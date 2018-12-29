@@ -1,7 +1,11 @@
-declare class IncreaseDecreaseType extends Enum implements PrimitiveType, Command {
+/**
+ *
+ * @author Kai Kreuzer - Initial contribution
+ */
+declare class UpDownType extends Enum implements PrimitiveType, State, Command {
 
-    public static INCREASE: IncreaseDecreaseType;
-    public static DECREASE: IncreaseDecreaseType;
+    public static UP: UpDownType;
+    public static DOWN: UpDownType;
 
     /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).
@@ -21,4 +25,13 @@ declare class IncreaseDecreaseType extends Enum implements PrimitiveType, Comman
      * @return a full string representation of the type to be consumed by 'valueOf(String)'
      */
     toFullString():string;
+
+    /**
+     * Convert this {@link State}'s value into another type
+     *
+     * @param target the desired {@link State} type
+     * @return the {@link State}'s value in the given type's representation, or <code>null</code> if the conversion was
+     *         not possible
+     */
+    as(target:State):State
 }

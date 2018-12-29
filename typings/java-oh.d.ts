@@ -1,9 +1,6 @@
-declare interface Comparable<T> {
-    compareTo(o:T): number;
-}
-
 declare class Locale {}
 declare class Calendar {}
+declare class ZonedDateTime {}
 
 declare type TriggerValues = {
     command: Command,
