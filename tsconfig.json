@@ -10,16 +10,20 @@
         "strictFunctionTypes": true,
         // "baseUrl": "./typings",
         // "typeRoots": [
-        //     "./typings/"
+        //     "./"
         // ],
-        // "types": [
-        //     "index"
+        // "baseUrl": "./typings",
+        // "typeRoots": [
+        //     "."
         // ],
+        "types": [
+            "index"
+        ],
         "noEmit": true,
         "forceConsistentCasingInFileNames": true
     },
     // "include": [
-    //     "typings/**"
+    //     "typings/*"
     // ],
     "exclude": [
         "node_modules"
