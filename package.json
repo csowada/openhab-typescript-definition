@@ -1,7 +1,7 @@
 {
   "name": "@types/openhab",
-  "version": "1.0.0",
-  "description": "TypeScript definitons for openHAB",
+  "version": "0.24.0",
+  "description": "TypeScript type definitons for openHAB",
   "author": "Christian Sowada, github@cs-dev.de",
   "main": "./src/index.js",
   "license": "EPL",
