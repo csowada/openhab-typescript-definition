@@ -4,7 +4,7 @@
  * @author Simon Merschjohann- Initial contribution
  *
  */
-interface ScriptExtensionProvider {
+interface ScriptExtensionProvider extends java.lang.IObject {
     /**
      * These presets will always get injected into the ScriptEngine on instance creation.
      *

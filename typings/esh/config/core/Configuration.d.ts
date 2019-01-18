@@ -7,7 +7,7 @@
  * @author Chris Jackson - fix concurrent modification exception when removing properties
  * @author Markus Rathgeb - add copy constructor
  */
-declare class Configuration {
+declare class Configuration extends java.lang.Object {
 
     constructor(properties: any)
 

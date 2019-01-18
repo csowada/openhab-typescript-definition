@@ -23,7 +23,7 @@
  * @author Ana Dimova - Initial Contribution
  * @author Vasil Ilchev - Initial Contribution
  */
-declare class Output {
+declare class Output extends java.lang.Object {
 
     /**
      * Constructs an {@code Output} instance with the specified name and output data type.

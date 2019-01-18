@@ -9,7 +9,7 @@
  *
  * @author Kai Kreuzer - Initial contribution and API
  */
-declare interface HistoricItem {
+declare interface HistoricItem extends java.lang.IObject {
 
     /**
      * returns the timestamp of the persisted item

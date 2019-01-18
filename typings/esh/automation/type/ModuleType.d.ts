@@ -12,7 +12,7 @@
  * @author Ana Dimova - Initial Contribution
  *
  */
-declare abstract class ModuleType implements Identifiable<string> {
+declare abstract class ModuleType extends java.lang.Object implements Identifiable<string> {
 
 	// constructors missing
 

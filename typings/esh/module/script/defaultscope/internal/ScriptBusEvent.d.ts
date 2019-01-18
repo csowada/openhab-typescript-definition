@@ -8,7 +8,7 @@
  * @author Stefan Bußweiler - Migration to new ESH event concept
  *
  */
-declare class SimpleBusEvent {
+declare class SimpleBusEvent extends java.lang.Object {
 
     /**
      * Sends a command for a specified item to the event bus.

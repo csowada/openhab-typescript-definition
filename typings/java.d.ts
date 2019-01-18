@@ -15,6 +15,45 @@ declare namespace java {
     export interface Comparable<T> {
       compareTo(o:T): number;
     }
+
+    export interface IObject {
+
+      /** Indicates whether some other object is "equal to" this one. */
+      equals(obj: any): boolean;
+
+      /** Returns the runtime class of this Object. */
+      getClass(): Class;
+
+      /** Returns a hash code value for the object. */
+      hashCode(): number;
+
+      /** Returns a string representation of the object. */
+      toString(): string;
+    }
+
+    export class Object implements IObject {
+
+      /** Indicates whether some other object is "equal to" this one. */
+      equals(obj: any): boolean;
+
+      /** Returns the runtime class of this Object. */
+      getClass(): Class;
+
+      /** Returns a hash code value for the object. */
+      hashCode(): number;
+
+      /** Returns a string representation of the object. */
+      toString(): string;
+    }
+
+    export class Number extends Object {
+      doubleValue(): number;
+      floatValue(): number;
+      intValue(): number;
+      longValue(): number;
+      shortValue(): number;
+    }
+
     export var System: System;
     export var Class: Class;
     export var ClassLoader: ClassLoader;

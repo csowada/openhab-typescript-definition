@@ -5,7 +5,7 @@
 declare class OpenClosedType extends Enum implements PrimitiveType, State, Command {
 
     public static OPEN: OpenClosedType;
-    public static CLOSE: OpenClosedType;
+    public static CLOSED: OpenClosedType;
 
     /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).

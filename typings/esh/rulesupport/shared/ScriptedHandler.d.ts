@@ -4,6 +4,6 @@
  * @author Simon Merschjohann
  *
  */
-interface ScriptedHandler {
+interface ScriptedHandler extends java.lang.IObject {
     // nothing, an empty interface
 }

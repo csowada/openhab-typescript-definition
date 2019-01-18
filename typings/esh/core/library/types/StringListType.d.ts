@@ -5,7 +5,7 @@
  * @author Gaël L'hopital - port to Eclipse SmartHome
  *
  */
-declare class StringListType implements Command, State {
+declare class StringListType extends java.lang.Object implements Command, State {
 
     public static DELIMITER: string;
     public static ESCAPED_DELIMITER: string;

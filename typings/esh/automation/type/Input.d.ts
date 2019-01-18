@@ -21,7 +21,7 @@
  *
  * @author Yordan Mihaylov - Initial Contribution
  */
-declare class Input {
+declare class Input extends java.lang.Object {
 
     /**
      * Creates an {@code Input} instance base on type of accepted data and input name. These are required information

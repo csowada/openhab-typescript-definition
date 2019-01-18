@@ -1,4 +1,4 @@
-interface AutomationManager {
+interface AutomationManager extends java.lang.IObject {
 
     removeModuleType(UID:string):void;
 

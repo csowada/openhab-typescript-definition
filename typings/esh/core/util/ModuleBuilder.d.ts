@@ -5,7 +5,7 @@
  * @author Markus Rathgeb - Split implementation for different module types in sub classes
  *
  */
-declare abstract class ModuleBuilder<B extends ModuleBuilder<B, T>, T extends Module> {
+declare abstract class ModuleBuilder<B extends ModuleBuilder<B, T>, T extends Module> extends java.lang.Object {
     
     public withDescription(description: string):B
     public withId(id: string):B

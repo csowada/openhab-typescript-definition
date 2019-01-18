@@ -6,7 +6,7 @@
  * @author Laurent Garnier - add MIME type
  *
  */
-declare class RawType implements PrimitiveType, State {
+declare class RawType extends java.lang.Object implements PrimitiveType, State {
 
     /**
      * @Deprecated

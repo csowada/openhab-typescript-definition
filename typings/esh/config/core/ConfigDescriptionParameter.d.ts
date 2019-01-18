@@ -1,4 +1,4 @@
-declare class ConfigDescriptionParameter {
+declare class ConfigDescriptionParameter extends java.lang.Object {
 	getContext(  ):string;
 	getDefault(  ):string;
 	getDescription(  ):string;

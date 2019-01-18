@@ -1,4 +1,4 @@
-declare abstract class GenericItem implements Item {
+declare abstract class GenericItem extends java.lang.Object implements Item {
         /**
      * returns the current state of the item
      *

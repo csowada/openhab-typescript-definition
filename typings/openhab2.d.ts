@@ -11,7 +11,7 @@ declare interface XXType extends PrimitiveType, Command {
 
 }
 
-declare class Enum {
-    public toString(): string;
+declare class Enum extends java.lang.Object{
+    // public toString(): string;
     public is(value: Enum | string): boolean;
 }

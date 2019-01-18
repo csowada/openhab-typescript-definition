@@ -12,7 +12,7 @@
  * @author Yordan Mihaylov - Initial Contribution
  * @author Kai Kreuzer - Initial Contribution
  */
-interface Module {
+interface Module extends java.lang.IObject {
 
     /**
      * Gets the {@link Module}'s unique identifier in the scope of the rule in which this module belongs. The identifier

@@ -4,7 +4,7 @@
  * 
  * @author Stefan Bußweiler - Initial contribution
  */
-interface Event {
+interface Event extends java.lang.IObject {
 
     /**
      * Gets the event type.

@@ -1,4 +1,4 @@
-declare class PointType implements ComplexType, Command, State {
+declare class PointType extends java.lang.Object implements ComplexType, Command, State {
     // external format patterns for output
     public static LOCATION_PATTERN: string
 

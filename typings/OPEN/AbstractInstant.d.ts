@@ -1,3 +1,3 @@
-declare interface AbstractInstant {
+declare interface AbstractInstant extends java.lang.IObject {
     
 }

@@ -9,7 +9,7 @@
  * @author Kai Kreuzer - Initial contribution and API
  * @author Markus Rathgeb - Add the simple and full type string methods
  */
-interface Type {
+interface Type extends java.lang.IObject {
 
     /**
      * Formats the value of this type according to a pattern (see {@link Formatter}).

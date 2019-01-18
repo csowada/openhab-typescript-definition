@@ -5,7 +5,7 @@
  * @author Kai Kreuzer - made it implement Rule
  *
  */
-declare abstract class SimpleRule implements Rule, SimpleRuleActionHandler {
+declare abstract class SimpleRule extends java.lang.Object implements Rule, SimpleRuleActionHandler {
 
     execute(module: Action, inputs: any): any;
 

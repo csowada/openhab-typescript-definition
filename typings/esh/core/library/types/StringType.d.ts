@@ -2,7 +2,7 @@
  *
  * @author Kai Kreuzer - Initial contribution
  */
-declare class StringType implements PrimitiveType, State, Command {
+declare class StringType extends java.lang.Object implements PrimitiveType, State, Command {
 
     constructor();
 

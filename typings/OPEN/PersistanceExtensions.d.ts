@@ -1,4 +1,4 @@
-declare class PersistenceExtensions {
+declare class PersistenceExtensions extends java.lang.Object {
 
     constructor()
 

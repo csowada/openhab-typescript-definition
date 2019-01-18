@@ -3,7 +3,7 @@
  *
  * @author Markus Rathgeb - Initial contribution
  */
-interface Identifiable<T> {
+interface Identifiable<T> extends java.lang.IObject {
 
     /**
      * Get the unique identifier.

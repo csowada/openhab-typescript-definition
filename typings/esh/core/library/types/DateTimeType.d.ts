@@ -4,7 +4,7 @@
  * @author Erdoan Hadzhiyusein - Refactored to use ZonedDateTime
  * @author Jan N. Klug - add ability to use time or date only
  */
-declare class DateTimeType implements PrimitiveType, State, Command {
+declare class DateTimeType extends java.lang.Object implements PrimitiveType, State, Command {
 
     static DATE_PATTERN: string
     static DATE_PATTERN_WITH_TZ: string

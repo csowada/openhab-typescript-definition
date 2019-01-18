@@ -5,7 +5,7 @@
  * @author Kai Kreuzer - Initial contribution and API
  *
  */
-declare class DecimalType extends Number implements PrimitiveType, State, Command, java.lang.Comparable<DecimalType> {
+declare class DecimalType extends java.lang.Number implements PrimitiveType, State, Command, java.lang.Comparable<DecimalType> {
 
     constructor();
 
@@ -13,9 +13,14 @@ declare class DecimalType extends Number implements PrimitiveType, State, Comman
 
     constructor(value: string);
     
-    public static  valueOf(value: string): DecimalType
+    public static valueOf(value: string): DecimalType
 
     public toBigDecimal(): number;  //
+
+    public doubleValue(): number;  //
+    public floatValue(): number;  //
+    public intValue(): number;  //
+    public longValue(): number;  //
 
     public compareTo(o:DecimalType): number;
 
