@@ -1,4 +1,5 @@
-declare const automationManager: AutomationManager;
+declare const automationManager: ScriptedAutomationManager;
+declare const ruleRegistry: RuleSupportRuleRegistryDelegate;
 // declare const Configuration: any;
 // declare const Action: any;
 // declare const Condition: any;

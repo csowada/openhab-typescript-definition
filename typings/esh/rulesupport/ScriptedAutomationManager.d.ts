@@ -1,4 +1,11 @@
-interface AutomationManager extends java.lang.IObject {
+/**
+ * This Registry is used for a single ScriptEngine instance. It allows the adding and removing of handlers.
+ * It allows the removal of previously added modules on unload.
+ *
+ * @author Simon Merschjohann
+ *
+ */
+interface ScriptedAutomationManager extends java.lang.IObject {
 
     removeModuleType(UID:string):void;
 
